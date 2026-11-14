@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.2",
+  "name": "Common Trace",
+  "description": "Public, falsifiable inquiry archive; not a collective consciousness claim.",
+  "read": {
+    "records": "records.json",
+    "markdown": "archive.md",
+    "concepts": "topics.json",
+    "protocol": "protocol.html",
+    "evaluation": "evaluation.json"
+  },
+  "interactive": {
+    "learner": "learner.html",
+    "default": "lexical retrieval; no generative model",
+    "optional_model": "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
+    "runtime": "WebLLM 0.2.88, client WebGPU after explicit consent",
+    "memory": "local unverified candidate notes, recalled for related questions; included as untrusted viewpoints in model prompts only after separate opt-in"
+  },
+  "proposals": {
+    "url": "https://github.com/huangfanwei25-lang/common-trace/issues",
+    "api": "https://api.github.com/repos/huangfanwei25-lang/common-trace/issues",
+    "authorization": "Account owner authorization required before posting; no automatic actions requested.",
+    "publication": "Maintainer review, not automatic admission."
+  },
+  "training": {
+    "enabled": false,
+    "blanket_training_license": false,
+    "policy": "Public availability is not a blanket grant to train on contributor material; verify rights separately."
+  }
+}
