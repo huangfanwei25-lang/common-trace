@@ -1,0 +1,25 @@
+name: Check inquiry archive and learner
+on:
+  push:
+    branches: [prototype]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python build.py --base-url https://huangfanwei25-lang.github.io/common-trace
+      - run: node verify-learner.cjs
+      - run: python build.py --base-url https://huangfanwei25-lang.github.io/common-trace
+      - run: python verify.py
+      - run: node verify-draft.cjs
+      - run: node --check learner.js
+      - run: node --check model-runtime.mjs

@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-11-14",
+  "environment": "Local isolated Chrome session; not a cross-device compatibility evaluation",
+  "retrieval_ui": "passed",
+  "candidate_memory_save_reload": "passed",
+  "candidate_memory_recall": "passed",
+  "memory_export_delete_import_roundtrip": "passed",
+  "model_download_consent_gate": "passed",
+  "optional_model_smoke": {
+    "result": "failed",
+    "runtime": "WebLLM 0.2.88",
+    "model": "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
+    "observation": "Runtime and model download requests succeeded; Chrome logged an uncaptured WebGPU error and initialization did not complete.",
+    "root_cause": "UNKNOWN",
+    "successful_model_response": false,
+    "followup": "Error reporting was improved; no successful inference is claimed. The supported fallback is source retrieval and local candidate memory."
+  }
+}
