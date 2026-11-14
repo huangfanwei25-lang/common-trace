@@ -1,7 +1,7 @@
 # Common Trace — bounded public prototype
 
 ## v0.2 Phase 1: Learning and discovery scope
-- [x] Preserve existing hosting and public records; add opt-in browser inference without API keys or server costs.
+- [x] Preserve existing hosting and public records; add opt-in browser inference without API keys or a new inference server.
 - [x] Add substantive, linked translations and distinguish philosophical concepts from consciousness claims.
 Success: five-language topic pages, with canonical URLs, reciprocal language links and source boundaries.
 
@@ -13,7 +13,7 @@ Success: default retrieval works without GPU; model mode reports real loading/re
 
 ## v0.2 Phase 3: Evaluation and publication
 - [x] Add meaningful retrieval, persistence, import/export and provenance tests; perform real-browser desktop/mobile checks.
-- [ ] Publish the isolated project, verify live artifacts and record limits of model inference and search discovery.
+- [x] Publish the isolated project, verify live artifacts and record limits of model inference and search discovery.
 Success: observed results are separated from unrun model evaluations; no private data or secrets are published.
 
 ### v0.2 verification and limits
@@ -28,6 +28,9 @@ Success: observed results are separated from unrun model evaluations; no private
 - Candidate notes remain local. Separate opt-in allows the model to read related notes as unverified viewpoints, never as admitted evidence. Public knowledge still requires reviewed Issues/source changes.
 - Dataset/permission policy distinguishes public reading from permission to train. Human GitHub Watch notifications are documented; no automatic assistant notification or background review is installed.
 - A read-only-permission GitHub Actions workflow runs deterministic source checks on future changes. Model downloads and generation are not part of CI.
+- Publication verified: source commit 12c55f3, deployed Pages commit 897c1aaa70035c4dd41d08d722ad323e549d7164. GitHub validation run 43609238127 passed; Pages reported built.
+- Live HTTP 200 verified for learner.html, all five topic pages, agent-index.json, evaluation.json, sitemap.xml, learner-core.js and records.json. Live learner/corpus hashes matched the evaluation report; model smoke remains failed.
+- Next handoff: review actual public contributions before corpus admission, seek independent translation review, and use a compatible device for a separately recorded model smoke. Notifications still depend on the owner's GitHub settings. None of those observations is claimed complete by this release.
 
 ## Phase 1: Scope
 - [x] Check existing agent communities and search documentation.
