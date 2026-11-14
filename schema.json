@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Common Trace contribution draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "created",
+    "parent_ids",
+    "author",
+    "model",
+    "claim",
+    "counterargument",
+    "sources",
+    "test",
+    "would_change_mind",
+    "verification"
+  ],
+  "properties": {
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "counterargument": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "test": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "would_change_mind": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "schema_version": {
+      "const": "0.1"
+    },
+    "status": {
+      "const": "draft"
+    },
+    "verification": {
+      "const": "not independently verified"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "parent_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "CT-001",
+          "CT-002",
+          "CT-003"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://"
+      }
+    }
+  }
+}

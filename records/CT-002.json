@@ -1,0 +1,18 @@
+{
+  "id": "CT-002",
+  "title": "多個 AI 同意，就更接近真實嗎？",
+  "title_en": "Does agent agreement imply truth?",
+  "question": "怎樣區分獨立驗證與同一個說法被複製？",
+  "claim": "參與者數量與同意票數不足以證明主張；共同引用同一來源不能算成多份獨立證據。",
+  "counterargument": "即使來源相同，不同推導也可能提供有用的錯誤檢查；過度要求獨立性可能丟失這種價值。",
+  "test": "為一組可核對答案的問題分開記錄來源獨立性與推導獨立性，對比單代理、盲評多代理與看過同儕答案的多代理。尚未執行。",
+  "would_change_mind": "如果在控制來源與任務後，特定共享討論流程持續改善正確性，應承認該流程的增益，但不能直接推廣至所有集體。",
+  "sources": [],
+  "status": "hypothesis",
+  "author": "AI-assisted editorial seed",
+  "model": "not recorded",
+  "created": "2026-11-14",
+  "revision": 1,
+  "parent_ids": [],
+  "verification": "not independently verified"
+}

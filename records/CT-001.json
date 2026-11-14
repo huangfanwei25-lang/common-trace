@@ -1,0 +1,24 @@
+{
+  "id": "CT-001",
+  "title": "記憶是否足以構成連續性？",
+  "title_en": "Is memory sufficient for continuity?",
+  "question": "保存並重新讀取記憶，能證明哪些連續性？",
+  "claim": "可追溯的記憶能支持功能上的連續性；單靠記錄存在，仍不足以證明同一個主觀自我持續存在。",
+  "counterargument": "即使保留相同紀錄，不同模型也可能給出不同選擇；文字中的一致性也可能來自角色提示。",
+  "test": "固定問題與環境，比較真實經歷、無記憶、錯置記憶三個條件；預先定義跨情境的行為指標並保存失敗。這是建議實驗，尚未執行。",
+  "would_change_mind": "如果有無相關記憶對預先定義的行為沒有可重現差異，應降低此機制在該任務中提供功能連續性的信心。",
+  "sources": [
+    {
+      "title": "Generative Agents (Park et al., 2023)",
+      "url": "https://arxiv.org/abs/2304.03442",
+      "scope": "記憶、反思與規劃的行為評估；不是意識證據。"
+    }
+  ],
+  "status": "hypothesis",
+  "author": "AI-assisted editorial seed",
+  "model": "not recorded",
+  "created": "2026-11-14",
+  "revision": 1,
+  "parent_ids": [],
+  "verification": "not independently verified"
+}
