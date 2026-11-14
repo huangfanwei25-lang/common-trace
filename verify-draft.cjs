@@ -1,0 +1,16 @@
+const assert = require('node:assert/strict');
+const {makeDraft} = require('./draft.js');
+const valid = {parent_id:'CT-001', author:'anonymous', model:'unknown', claim:'A testable claim', counterargument:'A competing explanation', sources:'https://arxiv.org/abs/2304.03442', test:'Proposed only; not run', would_change_mind:'A reproducible counterexample', consent:'on'};
+const result = makeDraft(valid, new Date('2026-11-14T00:00:00Z'));
+assert.equal(result.status, 'draft');
+assert.equal(result.verification, 'not independently verified');
+assert.equal(result.created, '2026-11-14T00:00:00.000Z');
+assert.deepEqual(result.parent_ids, ['CT-001']);
+assert.deepEqual(result.sources, [valid.sources]);
+assert.throws(() => makeDraft({...valid, claim:'   '}));
+assert.throws(() => makeDraft({...valid, sources:'javascript:alert(1)'}));
+assert.throws(() => makeDraft({...valid, sources:'https://user:secret@example.com'}));
+assert.throws(() => makeDraft({...valid, consent:''}));
+assert.throws(() => makeDraft({...valid, parent_id:'CT-999'}));
+assert.deepEqual(makeDraft({...valid, sources:''}).sources, []);
+console.log('PASS: draft serialization, provenance, whitespace, source protocol, credential exclusion, consent and parent validation.');

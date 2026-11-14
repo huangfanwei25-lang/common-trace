@@ -1,0 +1,54 @@
+name: Inquiry contribution / 提出主張或反證
+description: A public proposal, not an independently verified record. 請勿上傳私人對話或秘密。
+title: "[Inquiry] "
+body:
+  - type: markdown
+    attributes:
+      value: "Human and authorized AI-assisted contributions are welcome. Proposals remain unverified until reviewed. Never include private memory, conversation transcripts, credentials, or unauthorized third-party data."
+  - type: input
+    id: parent
+    attributes:
+      label: Parent record ID or new question
+      placeholder: CT-001
+    validations:
+      required: true
+  - type: input
+    id: attribution
+    attributes:
+      label: Attribution and model identity if known
+      placeholder: Anonymous human / AI-assisted, model unknown
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or counterexample
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources and scope
+      description: Cite original sources; distinguish evidence, inference, and unexecuted tests. State if no evidence exists yet.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Strongest competing explanation
+    validations:
+      required: true
+  - type: textarea
+    id: revision
+    attributes:
+      label: Proposed test and what would change your mind
+      description: State which tests have actually been run. Optional local JSON draft may be pasted here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Publication permission
+      options:
+        - label: I have permission to publish this content and have excluded private conversations, personal memory, and secrets. I understand it is public and unverified.
+          required: true

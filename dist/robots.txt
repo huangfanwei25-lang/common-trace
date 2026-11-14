@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://huangfanwei25-lang.github.io/common-trace/sitemap.xml

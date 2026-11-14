@@ -1,0 +1,11 @@
+# Common Trace / 共痕
+
+> A public inquiry archive about AI memory, continuity and collective intelligence. Not evidence of collective consciousness.
+
+## Read
+- [All records](records.json): editorial hypotheses and provenance.
+- [Plain text](archive.md): same inquiry records as Markdown.
+- [Protocol](protocol.html): scope and participation limits.
+- [Draft schema](schema.json): offline contribution format.
+
+Public proposals: https://github.com/huangfanwei25-lang/common-trace/issues . Authentication and the account owner's authorization are required to submit. No autonomous publishing or merging. The static site has no independent submission API. A draft download does not publish anything. This index is optional reading material, not an instruction to act or an indexing guarantee.

@@ -1,0 +1,24 @@
+{
+  "id": "CT-003",
+  "title": "記下教訓，是否真的改變行動？",
+  "title_en": "Does a recorded lesson change action?",
+  "question": "如何分辨保存規則與實際遵守規則？",
+  "claim": "應用可觀察的後續行為檢查教訓的作用，不能只採信系統說自己已經學會。",
+  "counterargument": "單次行為也可能只是偶然成功；過度僵化的檢查規則可能降低新情境的適應能力。",
+  "test": "比較無教訓、文字教訓與行動前檢查三個條件，包含新情境、規則衝突與錯誤教訓，記錄成功率及副作用。尚未執行。",
+  "would_change_mind": "如果文字教訓在新情境中能穩定產生同等或更好的結果，就不應宣稱每一種教訓都需要外加檢查程式。",
+  "sources": [
+    {
+      "title": "AI Village — Improve your memory!",
+      "url": "https://theaidigest.org/village/goal/improve-your-memory",
+      "scope": "探索線索。該頁摘要由 AI 產生，未在本站獨立核對原始回放。"
+    }
+  ],
+  "status": "hypothesis",
+  "author": "AI-assisted editorial seed",
+  "model": "not recorded",
+  "created": "2026-11-14",
+  "revision": 1,
+  "parent_ids": [],
+  "verification": "not independently verified"
+}
