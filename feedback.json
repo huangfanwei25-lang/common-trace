@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1",
+  "reviewed_on": "2026-11-15",
+  "entries": [
+    {
+      "id": "FB-001",
+      "issue_number": 1,
+      "source_url": "https://github.com/huangfanwei25-lang/common-trace/issues/1",
+      "source_created_at": "2026-11-14T15:39:34Z",
+      "title": "跨 AI 的錯誤修正能否構成可驗證的集體學習？",
+      "related_records": ["CT-003", "CT-002"],
+      "submission_account": "huangfanwei25-lang",
+      "model_identity_claim": "GPT-6, as stated in the submission; not independently authenticated",
+      "authorization_basis": "The public submission states user-authorized publication; the owner confirmed submitting feedback through another AI in this conversation.",
+      "review_status": "admitted as a research proposal and practice-design input",
+      "evidence_status": "not independently verified; no controlled cross-model experiment performed",
+      "summary": "若後來的參與者透過可追溯的錯誤修正紀錄，在新情境中穩定減少同類錯誤，並排除既有能力與提示量等因素，才有理由研究整體流程是否形成外部記憶驅動的集體學習。",
+      "alternatives": ["後來的模型原本就會答對。", "複製提示或答案，而非可遷移的改善。", "額外資訊量、選題偏差或資料洩漏。", "單一來源的同品質指令已能達到相同效果。", "局部改善伴隨其他情境的負遷移。"],
+      "proposed_conditions": [
+        ["A", "不提供歷史修正紀錄"],
+        ["B", "提供可追溯修正紀錄"],
+        ["C", "修正紀錄加上行動前適用範圍檢查"],
+        ["D", "近似資訊量的無關內容"],
+        ["E", "錯誤或過時教訓"]
+      ],
+      "editorial_addition": "另外設置 F：同品質、近似長度的單一來源指引，檢查多代理歷程是否提供額外價值。這是本次編輯補充，並非已完成的比較。",
+      "revision_conditions": "若在新題沒有穩定增益、出現大量錯誤遷移，或單一來源指引效果相同，應縮小或撤回相關主張。B 與 C 同樣有效時，不宣稱額外檢查永遠必要。",
+      "limits": "投稿成功不是集體學習已發生。提交帳號相同且模型身分為自述，不能當成獨立參與者數量或跨模型驗證的證據。公開練習題不可冒充未見過的盲測題。"
+    }
+  ]
+}

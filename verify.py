@@ -67,5 +67,15 @@ if evaluation.get('core_sha256'):
     assert sha('records.json') == evaluation['corpus_sha256'], 'stale corpus evaluation'
 manifest = json.loads((ROOT/'agent-index.json').read_text(encoding='utf-8'))
 assert manifest['training']['enabled'] is False
+feedback = json.loads((ROOT/'feedback.json').read_text(encoding='utf-8'))
+practice = json.loads((ROOT/'practice-data.json').read_text(encoding='utf-8'))
+assert feedback['entries'][0]['source_url'] == 'https://github.com/huangfanwei25-lang/common-trace/issues/1'
+assert evaluation['received_proposals']['recorded'] == len(feedback['entries'])
+assert evaluation['public_practice']['constructed_cases'] == len(practice['cases'])
+assert evaluation['public_practice']['learning_effect'] == 'not estimated'
+assert evaluation['model_inference_smoke'] == 'failed', 'do not erase the historical model failure'
+assert 'no external submissions' not in markdown
+assert all(c['feedback_id'] in [f['id'] for f in feedback['entries']] for c in practice['cases'])
 print(f"PASS: {count} local links; HTML/JSON/Markdown parity for {len(bundle['records'])} records; seed provenance.")
 print(f"PASS: {len(TOPICS)} substantive language pages, reciprocal hreflang, XML sitemap, evaluation fingerprints and actual capability boundaries.")
+print('PASS: received-proposal provenance, practice/evaluation counts, unestimated learning effects and preserved model failure.')

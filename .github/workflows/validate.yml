@@ -21,5 +21,7 @@ jobs:
       - run: python build.py --base-url https://huangfanwei25-lang.github.io/common-trace
       - run: python verify.py
       - run: node verify-draft.cjs
+      - run: node verify-practice.cjs
+      - run: node --check practice.js
       - run: node --check learner.js
       - run: node --check model-runtime.mjs

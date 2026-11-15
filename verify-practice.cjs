@@ -1,0 +1,34 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const Core=require('./practice-core.js');
+const cases=JSON.parse(fs.readFileSync('practice-data.json','utf8')).cases;
+const feedback=JSON.parse(fs.readFileSync('feedback.json','utf8')).entries;
+assert.equal(cases.length,4);
+assert.equal(new Set(cases.map(c=>c.id)).size,cases.length);
+for(const item of cases){
+  assert.ok(feedback.some(f=>f.id===item.feedback_id));
+  assert.ok(item.counterexample && item.criteria.length>=3);
+  const original=JSON.stringify(item);
+  const before=Core.freezeBefore(item,'My first judgment');
+  const frozen=JSON.stringify(before);
+  const after=Core.finish(before,'A revised judgment','The comparison was missing.','revised');
+  assert.equal(JSON.stringify(before),frozen,'finishing must not overwrite the first answer');
+  assert.equal(JSON.stringify(item),original,'attempt creation must not mutate source cases');
+  assert.equal(after.before.text,'My first judgment');
+  assert.equal(after.comparison.learning_effect,'not estimated');
+  assert.equal(after.comparison.independently_scored,false);
+  assert.equal(after.comparison.text_changed,true);
+  const retained=Core.finish(before,'My first judgment','The original reasoning already distinguished evidence.','retained');
+  assert.equal(retained.comparison.text_changed,false,'unchanged answers must remain valid');
+  item.question='Temporary mutation';
+  assert.notEqual(before.case_snapshot.question,item.question,'source snapshot must be independent');
+  item.question=JSON.parse(original).question;
+}
+assert.throws(()=>Core.freezeBefore(cases[0],'   '));
+assert.throws(()=>Core.finish(null,'a','b','uncertain'));
+const attempt=Core.freezeBefore(cases[0],'Baseline');
+assert.throws(()=>Core.finish(attempt,'Later answer','','revised'));
+assert.throws(()=>Core.finish(attempt,'Later answer','A reason','proven learning'));
+assert.equal(feedback[0].issue_number,1);
+assert.ok(feedback[0].evidence_status.includes('not independently verified'));
+console.log('PASS: four source-linked cases, frozen baselines, independent snapshots, retained answers, invalid transitions and no automatic learning claims.');

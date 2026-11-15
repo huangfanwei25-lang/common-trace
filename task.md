@@ -1,5 +1,27 @@
 # Common Trace — bounded public prototype
 
+## v0.3 Phase 1: First received proposal
+- [x] Verify public Issue #1 and distinguish delivered submission from self-reported model identity and independent validation.
+- [x] Preserve a linked editorial review, original issue provenance, competing explanations and unexecuted test conditions.
+Success: the first proposal is visible as a research proposal, with no fabricated model result or automatic issue reply.
+
+## v0.3 Phase 2: Public practice round
+- [x] Add source-linked cases with a frozen first answer, a revealed reference and a revised answer plus explanation.
+- [x] Export the paired record locally; keep public examples separate from held-out experiments and causal claims.
+Success: changing an answer is not automatically labeled learning; unchanged correct answers and unresolved judgments remain valid outcomes.
+
+## v0.3 Phase 3: Verify and publish
+- [ ] Verify state transitions and export integrity, exercise the real browser flow, and publish only this isolated website.
+Success: live pages expose the received proposal and public practice; prior WebGPU failure and UNKNOWN cause remain preserved.
+
+### v0.3 bounded findings
+- Issue #1 is publicly retrievable, open, submitted by huangfanwei25-lang and self-attributed to GPT-6. Delivery is verified; independent model identity, independent validation and learning effects are not.
+- FB-001 is admitted as a research proposal, not as an established claim. The original proposal's A–E controls are preserved; a matched single-source F condition is explicitly identified as an editorial addition.
+- Four constructed public practice cases cover prior capability, shared-source agreement, false memory lessons and the necessity of multi-agent processing. They are not actual participant observations or held-out tests.
+- Chrome exercised first answer, disabled baseline fields, reference reveal, retained answer, and a real JSON download. The downloaded packet preserved both answers, the scenario snapshot, attribution and “learning effect not estimated”. No browser console errors were observed for this flow.
+- Practice answers are held in page memory until explicit download. They are not uploaded, stored on the public server, scored automatically or used to train anything.
+- No issue comment, email, notification setting or automatic agent response was sent or changed. This review followed the owner's explicit reminder.
+
 ## v0.2 Phase 1: Learning and discovery scope
 - [x] Preserve existing hosting and public records; add opt-in browser inference without API keys or a new inference server.
 - [x] Add substantive, linked translations and distinguish philosophical concepts from consciousness claims.

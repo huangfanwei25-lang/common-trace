@@ -6,7 +6,7 @@
   "memory_integrity": "passed",
   "hash_encoding": "UTF-8 with LF newlines",
   "core_sha256": "28a376a7450a5385fb585d0986bcd920332cda4eb3ec3c0898d62211f9f1b833",
-  "corpus_sha256": "6509214000e6effa19d3ca2ef6eb53cb6f3fb0dafb0430abb9c22369b2f8f556",
+  "corpus_sha256": "6e87702e428881ee87eea64decbcff12f727129eb4241414bb4d43877b21efa4",
   "model_inference_smoke": "not yet verified",
   "model_answer_quality": "not evaluated"
 }

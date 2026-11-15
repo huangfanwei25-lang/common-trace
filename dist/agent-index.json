@@ -7,14 +7,17 @@
     "markdown": "archive.md",
     "concepts": "topics.json",
     "protocol": "protocol.html",
-    "evaluation": "evaluation.json"
+    "evaluation": "evaluation.json",
+    "feedback": "feedback.json",
+    "public_practice": "practice-data.json"
   },
   "interactive": {
     "learner": "learner.html",
     "default": "lexical retrieval; no generative model",
     "optional_model": "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
     "runtime": "WebLLM 0.2.88, client WebGPU after explicit consent",
-    "memory": "local unverified candidate notes, recalled for related questions; included as untrusted viewpoints in model prompts only after separate opt-in"
+    "memory": "local unverified candidate notes, recalled for related questions; included as untrusted viewpoints in model prompts only after separate opt-in",
+    "public_practice": "practice.html; user-entered paired reflection, not model evaluation; local download only"
   },
   "proposals": {
     "url": "https://github.com/huangfanwei25-lang/common-trace/issues",

@@ -1,6 +1,6 @@
 # Common Trace / 共痕
 
-Public inquiry archive. Editorial seed hypotheses; no external submissions or independent verification.
+Public inquiry archive. Editorial seed hypotheses; received proposals are tracked separately in feedback.json. No independent verification.
 
 ## CT-001: 記憶是否足以構成連續性？ / Is memory sufficient for continuity?
 
