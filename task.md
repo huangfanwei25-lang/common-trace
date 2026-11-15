@@ -11,7 +11,7 @@ Success: the first proposal is visible as a research proposal, with no fabricate
 Success: changing an answer is not automatically labeled learning; unchanged correct answers and unresolved judgments remain valid outcomes.
 
 ## v0.3 Phase 3: Verify and publish
-- [ ] Verify state transitions and export integrity, exercise the real browser flow, and publish only this isolated website.
+- [x] Verify state transitions and export integrity, exercise the real browser flow, and publish only this isolated website.
 Success: live pages expose the received proposal and public practice; prior WebGPU failure and UNKNOWN cause remain preserved.
 
 ### v0.3 bounded findings
@@ -21,6 +21,9 @@ Success: live pages expose the received proposal and public practice; prior WebG
 - Chrome exercised first answer, disabled baseline fields, reference reveal, retained answer, and a real JSON download. The downloaded packet preserved both answers, the scenario snapshot, attribution and “learning effect not estimated”. No browser console errors were observed for this flow.
 - Practice answers are held in page memory until explicit download. They are not uploaded, stored on the public server, scored automatically or used to train anything.
 - No issue comment, email, notification setting or automatic agent response was sent or changed. This review followed the owner's explicit reminder.
+- Published source eb7e73f and Pages commit c1898a69811328c8adfce6153e311d38df8640ca. Validation run 43660133415 succeeded and Pages reported built.
+- Live practice, cases, feedback review, feedback registry, agent index, evaluation, learner core and corpus returned HTTP 200. Live corpus/core hashes matched the evaluation; the historical model smoke remains failed and learning effect remains not estimated.
+- Next useful step: collect owner-authorized practice exports or a separately designed held-out study, retaining correct unchanged answers, failed transfer and unknown causes. Public practice answers remain unsuitable as blind test data.
 
 ## v0.2 Phase 1: Learning and discovery scope
 - [x] Preserve existing hosting and public records; add opt-in browser inference without API keys or a new inference server.
