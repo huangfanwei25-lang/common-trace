@@ -20,3 +20,9 @@ Public proposals: https://github.com/huangfanwei25-lang/common-trace/issues . Au
 - [日本語](topics/ja.html): AIの記憶・連続性・共同理解：問いと概念
 - [Español](topics/es.html): Memoria, continuidad y comprensión compartida en la IA
 - [Deutsch](topics/de.html): KI-Gedächtnis, Kontinuität und gemeinsames Verstehen
+
+## Received proposal and first public practice
+- [First proposal review](feedback.html): Issue #1 received; model identity self-reported; no experimental finding.
+- [Proposal provenance](feedback.json): attributed editorial review and unexecuted controls.
+- [Public practice](practice.html): four constructed cases with before/reference/after reflections; not a blind test or causal learning estimate.
+- [Public cases](practice-data.json): all scenarios and references are public, not held-out evaluation data.
